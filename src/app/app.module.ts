@@ -6,11 +6,12 @@ import {
   RoutingModule,
   MaterialModule
 } from './modules';
-
+import { HomeComponent } from './components';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BasicModule,
