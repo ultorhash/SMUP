@@ -4,7 +4,8 @@ import { AppComponent } from './app.component';
 import {
   BasicModule,
   RoutingModule,
-  MaterialModule
+  MaterialModule,
+  TranslationModule
 } from './modules';
 import { HomeComponent } from './components';
 
@@ -16,7 +17,8 @@ import { HomeComponent } from './components';
   imports: [
     BasicModule,
     RoutingModule,
-    MaterialModule
+    MaterialModule,
+    TranslationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
