@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import {
+  BasicModule,
   RoutingModule,
-  LibraryModule
+  MaterialModule
 } from './modules';
 
 
@@ -12,8 +13,9 @@ import {
     AppComponent
   ],
   imports: [
+    BasicModule,
     RoutingModule,
-    LibraryModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

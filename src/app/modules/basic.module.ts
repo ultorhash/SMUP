@@ -8,4 +8,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ]
 })
-export class LibraryModule {}
+export class BasicModule {}
