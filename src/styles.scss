@@ -1,4 +1,12 @@
+/* #region External Styles */
 @import '~normalize.css';
+/* #endregion External Styles */
+
+
+/* #region Application Styles */
+@import './styles/theme/theme';
+/* #endregion Application Styles */
+
 
 html, body {
   height: 100%;

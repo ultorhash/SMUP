@@ -1,0 +1,34 @@
+@use '@angular/material' as mat;
+@use 'palette' as smup;
+
+@include mat.core();
+
+$smup-light-primary: mat.define-palette(smup.$gray-palette);
+$smup-light-accent: mat.define-palette(smup.$blue-gray-palette);
+$smup-light-warn: mat.define-palette(smup.$red-palette);
+
+$smup-dark-primary: mat.define-palette(smup.$gray-palette, 800);
+$smup-dark-accent: mat.define-palette(smup.$blue-gray-palette, 700);
+$smup-dark-warn: mat.define-palette(smup.$red-palette);
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $smup-light-primary,
+    accent: $smup-light-accent,
+    warn: $smup-light-warn
+  )
+));
+
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $smup-dark-primary,
+    accent: $smup-dark-accent,
+    warn: $smup-dark-warn
+  )
+));
+
+@include mat.all-component-themes($light-theme);
+
+.theme-dark {
+  @include mat.all-component-colors($dark-theme);
+}
