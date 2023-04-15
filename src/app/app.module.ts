@@ -10,7 +10,8 @@ import {
 import { 
   HomeComponent,
   HeaderComponent,
-  FooterComponent
+  FooterComponent,
+  AboutComponent
 } from './components';
 
 @NgModule({
@@ -18,7 +19,8 @@ import {
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BasicModule,

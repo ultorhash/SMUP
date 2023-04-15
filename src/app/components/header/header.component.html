@@ -1,13 +1,13 @@
-<mat-toolbar>
+<mat-toolbar color="accent">
   <mat-toolbar-row>
     <mat-icon>nfc</mat-icon>
-    <span class="toolbar-spacer"></span>
     <nav
       mat-tab-nav-bar
     >
       <a
         *ngFor="let subpage of subpages"
         routerLinkActive
+        class="nav-link"
         [routerLink]="subpage.href"
       >
         {{ subpage.name | titlecase }}

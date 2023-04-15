@@ -4,7 +4,7 @@
 @include mat.core();
 
 $smup-light-primary: mat.define-palette(smup.$gray-palette);
-$smup-light-accent: mat.define-palette(smup.$blue-gray-palette);
+$smup-light-accent: mat.define-palette(smup.$blue-gray-palette, 300);
 $smup-light-warn: mat.define-palette(smup.$red-palette);
 
 $smup-dark-primary: mat.define-palette(smup.$gray-palette, 800);
