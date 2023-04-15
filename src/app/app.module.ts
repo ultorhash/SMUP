@@ -13,6 +13,7 @@ import {
   FooterComponent,
   AboutComponent
 } from './components';
+import { CapitalizePipe } from './pipes';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    CapitalizePipe
   ],
   imports: [
     BasicModule,

@@ -1,17 +1,21 @@
 <mat-toolbar color="accent">
   <mat-toolbar-row>
     <mat-icon>nfc</mat-icon>
-    <nav
-      mat-tab-nav-bar
-    >
+    <nav>
       <a
         *ngFor="let subpage of subpages"
         routerLinkActive
         class="nav-link"
         [routerLink]="subpage.href"
       >
-        {{ subpage.name | titlecase }}
+        {{ subpage.name | capitalize }}
       </a>
     </nav>
+    <mat-slide-toggle
+      class="theme-toggle"
+      [checked]="isChecked"
+      (change)="onThemeChange($event)"
+    >
+    </mat-slide-toggle>
   </mat-toolbar-row>
 </mat-toolbar>

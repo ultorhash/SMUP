@@ -6,5 +6,8 @@ nav {
 }
 
 .nav-link {
+  @include content-center();
+  height: 100%;
+  padding: 0 8px;
   border: 1px solid limegreen;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ISubpage } from '../../interfaces';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import { ISubpage } from '../../interfaces';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public isChecked: boolean = false;
   public subpages: ISubpage[] = [
     {
       name: 'o nas',
@@ -17,4 +19,8 @@ export class HeaderComponent {
       href: 'contact'
     }
   ];
+
+  onThemeChange({ checked }: MatSlideToggleChange): void {
+    this.isChecked = checked;
+  }
 }
