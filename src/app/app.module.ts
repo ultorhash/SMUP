@@ -8,14 +8,16 @@ import {
   TranslationModule
 } from './modules';
 import { 
-  HomeComponent, 
-  FooterComponent 
+  HomeComponent,
+  HeaderComponent,
+  FooterComponent
 } from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HeaderComponent,
     FooterComponent
   ],
   imports: [

@@ -1,0 +1,10 @@
+@import '../../../styles/mixins';
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+nav {
+  border: 1px solid green;
+  @include full-size();
+}
