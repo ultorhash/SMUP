@@ -1,13 +1,19 @@
 @import '../../../styles/mixins';
 
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
 nav {
-  @include full-size();
+  height: 100%;
   @include content-center(flex-end);
 }
 
-.nav-link {
+.subpage-link {
   @include content-center();
   height: 100%;
   padding: 0 8px;
   border: 1px solid limegreen;
+  font-weight: 500;
+  transition: color 0.1s ease-in-out;
 }

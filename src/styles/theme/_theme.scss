@@ -1,5 +1,6 @@
 @use '@angular/material' as mat;
 @use 'palette' as smup;
+@use 'custom' as custom;
 
 @include mat.core();
 
@@ -28,7 +29,9 @@ $dark-theme: mat.define-dark-theme((
 ));
 
 @include mat.all-component-themes($light-theme);
+@include custom.theme($light-theme);
 
 .theme-dark {
   @include mat.all-component-colors($dark-theme);
+  @include custom.theme($dark-theme);
 }

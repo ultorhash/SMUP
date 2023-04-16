@@ -6,9 +6,10 @@ import {
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import { ISubpage } from '../../interfaces';
+import { ILanguage, ISubpage } from '../../interfaces';
 import { ThemeClasses, Themes } from '../../enums';
 import { PreferenceService } from '../../services';
+import { languages, subpages } from './header.data';
 
 @Component({
   selector: 'app-header',
@@ -17,16 +18,8 @@ import { PreferenceService } from '../../services';
 })
 export class HeaderComponent implements OnInit {
   public isChecked: boolean = false;
-  public subpages: ISubpage[] = [
-    {
-      name: 'o nas',
-      href: 'about'
-    },
-    {
-      name: 'kontakt',
-      href: 'contact'
-    }
-  ];
+  public subpages: ISubpage[] = subpages;
+  public languages: ILanguage[] = languages
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -48,6 +41,10 @@ export class HeaderComponent implements OnInit {
     this.isChecked = checked;
     this.preferenceService.saveTheme(checked ? Themes.DARK : Themes.LIGHT);
     this.setAppTheme(themeClass);
+  }
+
+  onLanguageSelect(language: ILanguage): void {
+    console.log(language.code);
   }
 
   private setAppTheme(themeClass: ThemeClasses): void {
