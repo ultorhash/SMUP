@@ -2,10 +2,13 @@
 @import '~normalize.css';
 /* #endregion External Styles */
 
-
 /* #region Application Styles */
 @import './styles/theme/theme';
 /* #endregion Application Styles */
+
+/* #region Components Styles */
+@import '/src/app/components/footer/footer.component.scss';
+/* #endregion Components Styles */
 
 
 html, body {
