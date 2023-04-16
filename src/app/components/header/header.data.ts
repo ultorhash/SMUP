@@ -3,11 +3,11 @@ import { ILanguage, ISubpage } from "../../interfaces";
 
 export const subpages: ISubpage[] = [
   {
-    name: 'o nas',
+    name: 'about',
     href: 'about'
   },
   {
-    name: 'kontakt',
+    name: 'contact',
     href: 'contact'
   }
 ];

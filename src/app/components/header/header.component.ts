@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { TranslateService } from '@ngx-translate/core';
 import { ILanguage, ISubpage } from '../../interfaces';
 import { ThemeClasses, Themes } from '../../enums';
 import { PreferenceService } from '../../services';
@@ -24,14 +25,18 @@ export class HeaderComponent implements OnInit {
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private renderer: Renderer2,
+    private translateService: TranslateService,
     private preferenceService: PreferenceService
   ) {}
 
   ngOnInit(): void {
+    const language = this.preferenceService.getLanguage();
     const theme = this.preferenceService.getTheme();
+
     this.isChecked = theme === Themes.DARK;
     const themeClass = this.isChecked ? ThemeClasses.DARK_CLASS : ThemeClasses.LIGHT_CLASS;
 
+    this.translateService.use(language ?? languages[0].code);
     this.setAppTheme(themeClass);
   }
 
@@ -44,7 +49,8 @@ export class HeaderComponent implements OnInit {
   }
 
   onLanguageSelect(language: ILanguage): void {
-    console.log(language.code);
+    this.translateService.use(language.code);
+    this.preferenceService.saveLanguage(language.code);
   }
 
   private setAppTheme(themeClass: ThemeClasses): void {

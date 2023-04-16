@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Themes } from '../enums';
+import { LangCodes, Themes } from '../enums';
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +11,13 @@ export class PreferenceService {
 
   saveTheme(theme: Themes): void {
     localStorage.setItem('Theme', theme);
+  }
+
+  getLanguage(): LangCodes {
+    return localStorage.getItem('Language') as LangCodes;
+  }
+
+  saveLanguage(code: LangCodes): void {
+    localStorage.setItem('Language', code);
   }
 }

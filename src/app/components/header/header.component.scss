@@ -5,8 +5,8 @@
 }
 
 nav {
-  height: 100%;
   @include content-center(flex-end);
+  height: 100%;
 }
 
 .subpage-link {
