@@ -8,11 +8,13 @@ import {
   TranslationModule
 } from './modules';
 import { HomeComponent } from './components';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BasicModule,

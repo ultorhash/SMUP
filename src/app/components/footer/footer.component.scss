@@ -1,0 +1,34 @@
+
+
+.footer-grid {
+}
+
+.mat-grid-tile {
+  .footer-grid-info {
+    width: 100%;
+    padding-left: 6vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .footer-grid-info:nth-child(-n+3) {
+    // height: 20vh;
+  }
+}
+
+.footer-grid-info {
+  width: 100%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.footer-grid-bottom {
+  width: 100%;
+  position: relative;
+
+  mat-icon {
+    position: absolute;
+    left: 35%;
+  }
+}
+
