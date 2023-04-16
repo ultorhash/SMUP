@@ -6,21 +6,15 @@
 @import './styles/theme/theme';
 /* #endregion Application Styles */
 
-/* #region Components Styles */
-@import '/src/app/components/footer/footer.component.scss';
-/* #endregion Components Styles */
-
-
 html, body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
-.footer {
+footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: fit-content;
-
 }

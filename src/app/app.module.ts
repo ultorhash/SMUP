@@ -7,8 +7,10 @@ import {
   MaterialModule,
   TranslationModule
 } from './modules';
-import { HomeComponent } from './components';
-import { FooterComponent } from './components/footer/footer.component';
+import { 
+  HomeComponent, 
+  FooterComponent 
+} from './components';
 
 @NgModule({
   declarations: [
