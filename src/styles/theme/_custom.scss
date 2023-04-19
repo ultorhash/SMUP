@@ -4,6 +4,17 @@
 @mixin color($theme) {
   $color-config: mat.get-color-config($theme);
   $primary-palette: map.get($color-config, 'primary');
+  $accent-palette: map.get($color-config, 'accent');
+
+  .theme-light footer {
+    background-color: mat.get-color-from-palette($accent-palette, 100);
+    color: mat.get-color-from-palette($primary-palette, 900);
+  }
+
+  .theme-dark footer {
+    background-color: mat.get-color-from-palette($accent-palette, 700);
+    color: mat.get-color-from-palette($primary-palette, 50);
+  }
 }
 
 @mixin theme($theme) {

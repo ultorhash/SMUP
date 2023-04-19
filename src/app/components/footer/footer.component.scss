@@ -1,14 +1,12 @@
 @import '../../../styles/colors';
 
 .footer-grid {
-  background-color: $blue-gray-600;
-  color: $blue-gray-200;
-
   .mat-grid-tile:nth-child(-n+3) {
     border-bottom: 1px solid $white;
   }
 }
 
+//TODO: move mat-grid-tile to material override file
 .mat-grid-tile {
   .footer-grid-info {
     width: 100%;
@@ -31,11 +29,6 @@ ul {
   li {
     margin: 2px;
   }
-}
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: $blue-gray-200;
 }
 
 .footer-grid-bottom {
