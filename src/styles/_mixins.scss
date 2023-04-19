@@ -1,0 +1,14 @@
+@mixin full-size {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin content-center(
+  $justify-content: center,
+  $gap: 8px
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+  gap: $gap
+}

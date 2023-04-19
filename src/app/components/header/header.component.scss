@@ -1,0 +1,17 @@
+@import '../../../styles/mixins';
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+nav {
+  @include content-center(flex-end);
+  height: 100%;
+}
+
+.subpage-link {
+  @include content-center();
+  height: 100%;
+  padding: 0 8px;
+  font-weight: 500;
+}

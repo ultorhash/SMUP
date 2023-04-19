@@ -8,15 +8,21 @@ import {
   TranslationModule
 } from './modules';
 import { 
-  HomeComponent, 
-  FooterComponent 
+  HomeComponent,
+  HeaderComponent,
+  FooterComponent,
+  AboutComponent
 } from './components';
+import { CapitalizePipe } from './pipes';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FooterComponent
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    CapitalizePipe
   ],
   imports: [
     BasicModule,
