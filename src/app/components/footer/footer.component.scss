@@ -1,0 +1,44 @@
+@import '../../../styles/colors';
+
+.footer-grid {
+  background-color: $blue-gray-600;
+  color: $blue-gray-200;
+
+  .mat-grid-tile:nth-child(-n+3) {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.mat-grid-tile {
+  .footer-grid-info {
+    width: 100%;
+    padding-left: 6vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.footer-grid-info {
+  width: 100%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 2px;
+  }
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: $blue-gray-200;
+}
+
+.footer-grid-bottom {
+  width: 100%;
+  position: relative;
+}

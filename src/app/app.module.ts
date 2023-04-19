@@ -7,12 +7,16 @@ import {
   MaterialModule,
   TranslationModule
 } from './modules';
-import { HomeComponent } from './components';
+import { 
+  HomeComponent, 
+  FooterComponent 
+} from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BasicModule,
